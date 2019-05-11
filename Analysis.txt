@@ -1,11 +1,11 @@
 Analysis
 
-The runtime for printing the answer to the problem in Task 0 is: O(1) 
+The runtime for reading database is in Task 0 is O(n) and just for printing the answer to the problem in Task 0 is: O(1) 
 
 The runtime to run the answer for the code in Task 1 is: O(n)
 
-The runtime to run the answer for the code in Task 2 is: O(n)
+The runtime to run the answer for the code in Task 2 is: O(n * m)
 
 The runtime to run the answer for the code in Task 3 is: O(n^2)
 
-The runtime to run the answer for the code in Task 4 is: O(n)
+The runtime to run the answer for the code in Task 4 is: O(n * m)
