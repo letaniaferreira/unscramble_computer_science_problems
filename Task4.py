@@ -20,7 +20,7 @@ for line in calls:
     received_calls.append(line[1])
 
 for line in calls:
-    if line[0] not in texts and line[0] not in received_calls:
+    if line[0] not in texts[0] and line[0] not in received_calls:
         telemarketers.add(line[0])
 
 sorted_telemarketers = sorted(telemarketers)
