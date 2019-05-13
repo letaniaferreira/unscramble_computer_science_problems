@@ -5,6 +5,8 @@ It's ok if you don't understand how to read files.
 import csv
 
 received_calls = []
+sent_texts = []
+received_texts = []
 telemarketers = set()
 
 
@@ -19,8 +21,14 @@ with open('calls.csv', 'r') as f:
 for line in calls:
     received_calls.append(line[1])
 
+for line in texts:
+    received_texts.append(line[1])
+
+for line in texts:
+    sent_texts.append(line[0])
+
 for line in calls:
-    if line[0] not in texts[0] and line[0] not in received_calls:
+    if line[0] not in sent_texts and line[0] not in received_texts and line[0] not in received_calls:
         telemarketers.add(line[0])
 
 sorted_telemarketers = sorted(telemarketers)
